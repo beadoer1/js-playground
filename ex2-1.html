@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>test if 1</h2>
+<h4>입력받은 숫자가 홀수인지 짝수인지 알려주는 프로그램 작성하기</h4>
+<script>
+    var str = prompt("숫자를 입력하세요.");
+    var n = Number(str);
+    if (n % 2 === 0){
+        console.log(n + "은 짝수 입니다.");
+    }
+    else if(n % 2 === 1){
+        console.log(n + "은 홀수 입니다.");
+    }
+    else if(n % 2 === -1){
+        console.log(n + "은 홀수 입니다.")
+    }
+    else {
+        console.log(n + "은 정수가 아닙니다.")
+    }
+</script>
+    
+</body>
+</html>

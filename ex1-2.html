@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>"BMI(body mass index)_신체질량지수" 구하기</h2>
+    <h5>18.5 이하 : 저체중</h5>
+    <h5>18.5 ~ 22.9 : 정상</h5>
+    <h5>23 ~ 24.9 : 과체중</h5>
+    <h5>25 ~ 29.9 : 비만</h5>
+    <h5>30 ~ 34.9 : 고도비만</h5>
+    <h5>35 이상 : 초고도비만</h5>
+    <script>
+        var height = prompt("당신의 키를 입력하세요.");
+        var weight = prompt ("당신의 몸무게를 입력하세요");
+        var nHeight = Number(height);
+        var nWeight = Number(weight);
+        var BMI = nWeight / (nHeight/100*nHeight/100);
+        console.log("당신의 BMI는 " + BMI + " 입니다.");
+    </script>
+</body>
+</html>
