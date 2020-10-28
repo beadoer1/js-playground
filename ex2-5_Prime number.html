@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>소수 판별 프로그램</h2>
+    <script>
+    // My answer_wrong. -> 인터넷에서 '윌슨의 정리'를 찾아서 했는데..안된다ㅠㅠ
+        // var n = Number(prompt("소수 판별할 숫자를 입력하세요.(양의 정수)"));
+        // if (n === 2){
+        //     console.log(n + "는 소수 입니다.");
+        // }
+        // else if(n > 2 && n % 2 != 0){
+        //     var mult = 1;
+        //     for(var i = 1; i <= (n-1); i++){
+        //         mult = mult * i;
+        //     }
+        //     console.log(i);
+        //     console.log(mult);
+        //     var ans = mult % n;
+        //     console.log(n);
+        //     console.log(ans);
+        //     if (ans === n - 1){
+        //         console.log(n + "는(은) 소수 입니다.");
+        //     } 
+        //     else{
+        //         console.log(n + "는(은) 소수가 아닙니다.");
+        //     }
+        // }
+        // else {
+        //     console.log(n + "는(은) 소수가 아닙니다.");
+        // }
+    //Teacher's answer
+        var isPrime = true;
+        var n = Number(prompt("2 이상의 정수를 입력하세요."));
+        for (var i = 2; i < n; i++){
+            if(n % i === 0){
+                isPrime = false;
+                break; //답을 찾았을 때 멈춤
+            }
+        }
+        if(isPrime){
+            document.write(n + "은 소수입니다.");
+            console.log(n + "은 소수입니다.");
+        }
+        else{
+            document.write(n + "은 소수가 아닙니다.");
+            console.log(n + "은 소수가 아닙니다.");
+        }
+</script>
+</body>
+</html>
