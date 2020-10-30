@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device0width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>function test 1</h2>
+    <script>
+        var foo = function(){
+            for (i = 0; i < 10; i++){
+                for (j = 0; j < 10; j++){
+                    console.log(i, j);
+                    if (i === 5 && j === 3){
+                    return; //function 에 넣고, return 을 지정해주면 전체 함수를 끝낼 수 있어서 이중 루프를 한꺼번에 끝낼 수 있다★★★★★
+                    };
+                };
+            };
+        };
+        foo();
+    </script>
+</body>
+</html>
