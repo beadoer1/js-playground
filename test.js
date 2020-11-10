@@ -1,5 +1,6 @@
-var repeat = function(text, num){
-    for (i = 0; i < num; i++) {
-        console.log((i+1) + " " + text);
-    };
+var test1 = function(test){
+    if(test === "exit"){
+        return;
+    }
+    console.log("보이냐!!!");
 };

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find PrimeNumber use object</title>
+</head>
+<body>
+    <h1>Prime Number</h1>
+    <script>
+        var numbers = {};
+        numbers.all = [];
+        numbers.prime = [];
+        numbers.isPrime = function(number){
+            for(var i = 2; i < number; i++){
+                if(number % i === 0){
+                    return false;
+                }
+            }
+            return true;
+        };
+        numbers.addAll = function(Max_num){
+            for(var i = 1; i <= Max_num; i++){
+                numbers.all.push(i);
+            }
+        };
+        numbers.addPrime = function(){
+            for(var i = 0; i < this.all.length; i++){
+                var n = this.all[i];
+                if(this.isPrime(n)){
+                    this.prime.push(n);
+                }
+            }
+        };
+        numbers.getAllPrimes = function(){
+            for(var i = 0; i < this.prime.length; i++){
+                document.write(this.prime[i] + "<br>\n");
+            }
+        };
+
+        numbers.addAll(10000);
+        numbers.addPrime();
+        numbers.getAllPrimes();
+    </script>
+
+</body>
+</html>
