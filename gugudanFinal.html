@@ -20,7 +20,7 @@
         var num = prompt("숫자를 '?,?' 형태로 입력하세요.");
         num.split(",");
         var a = Number(num[0]);
-        var b = Number(num[2]);
+        var b = Number(num[2]); //split 을 이용해 ","로 문자를 나눴으나, 배열에 ","가 포함되는걸 보니 문자 외 기호로는 작동이 안되는 것 같다.
         var calc = function(){
             for(var i = 2; i <= 9; i++){
                 document.write("<h2>" + i + "단</h2>");
