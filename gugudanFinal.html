@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gugudanFinal</title>
+</head>
+<body>
+    <h2>구구단 마무리</h2>
+    <script>
+        // for(var i = 2; i <= 9; i++){
+        //     document.write("<h2>" + i + "단</h2>");
+        //     for(var j = 0; j < 9; j++){
+        //         var t = j + 1;
+        //         var y = i * t;
+        //         document.write(i + " x " + t + " = " + y + "<br>\n");
+        //     }
+        // }
+
+        var num = prompt("숫자를 '?,?' 형태로 입력하세요.");
+        num.split(",");
+        var a = Number(num[0]);
+        var b = Number(num[2]);
+        var calc = function(){
+            for(var i = 2; i <= 9; i++){
+                document.write("<h2>" + i + "단</h2>");
+                for(var j = 0; j < 9; j++){
+                    t = j + 1;
+                    y = i * t;
+                    document.write(i + " x " + t + " = " + y + "<br>\n");
+                    if(i === a && t === b){
+                        return; // 함수에서 return은 함수 전체를 빠져 나오게 한다. 하여, 여러 반복문을 한꺼번에 빠져 나갈 때 사용
+                    }
+                }
+            }
+        };
+        calc();
+    </script>
+</body>
+</html>
