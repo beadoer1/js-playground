@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printResult(x){
+            document.write("<h2>" + x + " 단</h2>");
+            for(var i = 1; i <= 9; i++){
+                var y = x * i ;
+                document.write(x + " x " + i + " = " + y + "<br>\n");
+            }
+        }
+        function main(){
+            for (var n = 2; n <= 9; n++){
+                printResult(n);
+            }
+        }
+        main();
+    </script>
+</body>
+</html>

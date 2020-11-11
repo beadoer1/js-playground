@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>함수를 이용하여 구구단 전체 출력하기</h2>
+    <script>
+
+        var mult = function(num){
+            var results = [];
+            for(var i = 1; i <= 9; i++){
+                results[i] = num * i
+            }
+            return results;
+        };
+
+        var print = function(num){
+            for(var i = 1; i <= 9; i++){
+                var str = "";
+                str += num;
+                str += " x ";
+                str += i;
+                str += " = ";
+                str += results[i];
+                str += "<br>\n";
+                document.write(str);
+            }
+        };
+
+        var solution = function(){
+            for(var n = 2; n <= 9; n++){
+                document.write("<h2>" + n + " 단</h2>");
+                var ret = mult(n);
+                print(ret);
+            }
+        }
+
+        solution();
+    </script>
+</body>
+</html>
