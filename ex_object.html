@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Human = function(name, hp, power, int){
+            this.name = name ;
+            this.hp = hp ;
+            this.power = power ;
+            this.int = int ;
+            this.attack = function(human){
+                human.hp -= this.power ;
+                console.log(this.name + "이(가) " + human.name + "을(를) 공격했다.");
+            };
+            this.heal = function(human){
+                human.hp += this.int
+                console.log(this.name + "이(가) " + human.name + "을(를) 치료했다.")
+            }
+            this.shout = function(n){
+                console.log(this.name + "이(가) " + n + "(이)라고 외쳤다!")
+            }
+            this.show = function(){
+                console.log("[%s] %d", this.name, this.hp);
+            };
+
+        };
+
+        var Food = function(name, energy){
+            this.name = name;
+            this.energy = energy;
+            this.feed = function(human){
+                human.hp += this.energy;
+                console.log(human.name + "이(가) " + this.name + "을(를) 먹었다.");
+            };
+        };
+    </script>
+</body>
+</html>
