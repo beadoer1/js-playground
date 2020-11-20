@@ -12,22 +12,23 @@
             this.hp = hp ;
             this.power = power ;
             this.int = int ;
-            this.attack = function(human){
-                human.hp -= this.power ;
-                console.log(this.name + "이(가) " + human.name + "을(를) 공격했다.");
-            };
-            this.heal = function(human){
-                human.hp += this.int
-                console.log(this.name + "이(가) " + human.name + "을(를) 치료했다.")
-            }
-            this.shout = function(n){
-                console.log(this.name + "이(가) " + n + "(이)라고 외쳤다!")
-            }
             this.show = function(){
                 console.log("[%s] %d", this.name, this.hp);
             };
 
         };
+
+        Human.prototype.attack = function(target){
+            target.hp -= this.power ;
+            console.log(this.name + "이(가) " + target.name + "을(를) 공격했다.");
+            };
+        Human.prototype.heal = function(target){
+            target.hp += this.int
+            console.log(this.name + "이(가) " + target.name + "을(를) 치료했다.")
+            }
+        Human.shout = function(n){
+            console.log(this.name + "이(가) " + n + "(이)라고 외쳤다!")
+            }
 
         var Food = function(name, energy){
             this.name = name;
