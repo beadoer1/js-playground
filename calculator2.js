@@ -11,7 +11,7 @@ var main = function(){
     var str = "결과 : ";
 
     if(sign == "+"){
-        var sumNum = n1+n2;
+        sumNum = n1+n2;
         console.log(sumNum);
         str += sumNum + " 입니다.";
     }
