@@ -1,3 +1,3 @@
-# js-playground
-자바스크립트 플레이그라운드 공부용
-['인프런(inflearn) > 쉽고 자연스럽게 배워보는 Javascript 입문 - 코드스쿼드 마스터즈 코스 레벨1' - 호눅스(정호영) 강사님] 강의와 함께
+## [Inflearn] 쉽고 자연스럽게 배워보는 Javascript 입문 - 정호영 교수님
+
+Javascript 플레이그라운드 실습을 남기는 공간입니다.
